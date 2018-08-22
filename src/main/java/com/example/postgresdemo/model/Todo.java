@@ -1,6 +1,5 @@
 package com.example.postgresdemo.model;
 
-import com.example.postgresdemo.repository.UserRepository;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
@@ -58,7 +57,7 @@ public class Todo extends AuditModel {
         this.description = description;
     }
 
-    public Question getUser() {
+    public User getUser() {
         return user;
     }
 
